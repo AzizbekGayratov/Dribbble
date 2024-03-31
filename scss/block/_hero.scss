@@ -1,0 +1,115 @@
+.hero {
+    background-repeat: no-repeat;
+    background-image: url("/img/hero_bg.jpg");
+    background-size: cover;
+
+    &__block {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 85px;
+    }
+
+    &__btn_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        color: rgb(255, 255, 255);
+        padding: 16px 20px;
+        border-radius: 50px;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background: #fff;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+    }
+
+    &__content {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        max-width: 412px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        margin-top: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    &__inner_box {
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 40px;
+    }
+
+    &__input_block {
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 56px;
+        border-radius: 50px;
+        background: rgb(243, 243, 244);
+        background-repeat: no-repeat;
+        background-image: url('/img/hero_icon.svg');
+        background-position: left 25px center;
+        cursor: pointer;
+
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &__link {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 5px 16px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 50px;
+        background: transparent;
+        display: inline-block;
+        transition: all 0.2s ease;
+
+        &:hover {
+            border-color: transparent;
+            opacity: 0.8;
+        }
+    }
+}
